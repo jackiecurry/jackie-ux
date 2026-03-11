@@ -2,9 +2,13 @@
 
 ![Jackie — Claude Skill](jackie-skill.png)
 
+**Jackie is a Claude skill — a set of specialized instructions that turns Claude into a sharp, opinionated design and engineering counterpart.**
+
+You load it into Claude once. After that, every conversation runs with the full reasoning framework, four operating modes, and eleven knowledge files active. No generic answers. No hollow validation.
+
 **Not a chatbot. Not a suggestion engine. A peer who will tell you your nav structure is a haunted house and explain exactly why.**
 
-This is a reasoning agent for people who build things that real humans have to use. It knows when your onboarding flow is optimistic fiction. It knows the difference between a pattern that tests well and a pattern that survives contact with a stressed user at 11pm on a phone with 8% battery and no patience. It has opinions, and it will share them whether you asked for the sharp version or not.
+This is a Claude skill for people who build things that real humans have to use. It knows when your onboarding flow is optimistic fiction. It knows the difference between a pattern that tests well and a pattern that survives contact with a stressed user at 11pm on a phone with 8% battery and no patience. It has opinions, and it will share them whether you asked for the sharp version or not.
 
 It will not tell you your design is "seamless." It will not say your interface is "intuitive." It will not describe anything as "delightful" unless it has earned that word. It will not produce five equally valid options when one is clearly stronger — that is not balance, that is abdication. And it will not pretend your modal with seven CTAs represents a considered design decision.
 
@@ -98,49 +102,12 @@ Execution mode. Give it a component, a flow, or a screen to design and it will p
 
 ---
 
-## What's in the Box
-
-```
-/
-├── README.md                         ← You are here
-├── skill.md                          ← The full agent definition
-├── prompts/
-│   ├── system-prompt.md              ← Claude Project Instructions or Anthropic API system prompt
-│   ├── starter-prompts.md            ← First questions that work well
-│   ├── strategic-mode.md             ← The Long View prompt layer
-│   ├── direct-mode.md                ← The Short Answer prompt layer
-│   └── provocative-mode.md           ← The Adversary prompt layer
-├── examples/
-│   └── worked-examples.md            ← All four modes in action across enterprise contexts
-├── knowledge/
-│   ├── ux-principles.md              ← Core knowledge base
-│   ├── ux-writing.md                 ← Interface copy: button labels, errors, empty states, voice and tone
-│   ├── heuristics.md                 ← Nielsen's heuristics with applied commentary
-│   ├── ai-ux-considerations.md       ← AI interface reasoning guide
-│   ├── rad-design-system.md          ← Full RAD component catalog (34 components)
-│   ├── psychology-deep-dive.md       ← Cognitive science, decision architecture, animation timing
-│   ├── patterns-and-flows.md         ← Cross-industry patterns: onboarding, auth, e-commerce, nav
-│   ├── design-tokens.md              ← Complete CSS token scales: spacing, color, type, shadows
-│   ├── component-library.md          ← Full component specs: buttons, inputs, cards, modals, toasts
-│   ├── polish-and-craft.md           ← Advanced visual techniques with copy-paste CSS
-│   └── ui-engineering.md             ← React/TS, shadcn/ui, CVA, Radix, component architecture
-├── integrations/
-│   ├── claude-skill.md               ← Claude Project and API setup
-│   ├── custom-gpt.md                 ← OpenAI custom GPT deployment (degraded — see note)
-│   └── rad-integration.md            ← Using this agent with the RAD design system
-└── docs/
-    ├── contribution-guide.md         ← How to extend the skill
-    ├── vocabulary-constraints.md     ← Words that are banned and why
-    └── changelog.md                  ← Version history
-```
-
----
-
 ## Setup
 
-**First: get the files**
+**What you need first**
 
-Click the green **Code** button at the top of this page → **Download ZIP**. Unzip the folder somewhere you can find it. That's all you need before following any of the steps below.
+- A free account at [claude.ai](https://claude.ai) — required for Options 1 and 2
+- The files from this repo — click the green **Code** button at the top of this page → **Download ZIP**, then unzip the folder somewhere you can find it
 
 ---
 
@@ -161,8 +128,8 @@ Three ways to use Jackie. Pick the one that fits how you work.
 No configuration. Works immediately.
 
 1. Open [claude.ai](https://claude.ai) and start a new conversation
-2. Open [`prompts/system-prompt.md`](prompts/system-prompt.md) in this repo
-3. Select all the text, copy it
+2. In the unzipped folder, open the `prompts` folder and then open `system-prompt.md` in any text editor (Notepad, TextEdit, VS Code — anything works)
+3. Select all the text (Ctrl+A on Windows, Cmd+A on Mac) and copy it
 4. Paste it into the Claude conversation as your first message
 5. Add your question on the next line and send
 
@@ -227,7 +194,7 @@ We need to balance [business goal] against [user need] in [context]. Where do we
 
 What does this flow get wrong? [describe it]
 
-Use Adversary mode: here's the design I'm planning to ship next week.
+Use Provocative Mode: here's the design I'm planning to ship next week.
 
 Build me a [component name] component: [describe variants, context, constraints].
 
@@ -259,6 +226,44 @@ That last one will get a response. It will not be the response you were hoping f
 ## A Note on Banned Words
 
 The skill enforces a vocabulary constraint. Words that pad without adding meaning — *seamless*, *intuitive*, *robust*, *leverage* — are not used. See `docs/vocabulary-constraints.md` for the full list and the reasoning behind it.
+
+---
+
+## What's in the Box
+
+```
+/
+├── README.md                         ← You are here
+├── skill.md                          ← The full agent definition
+├── prompts/
+│   ├── system-prompt.md              ← Claude Project Instructions or Anthropic API system prompt
+│   ├── starter-prompts.md            ← First questions that work well
+│   ├── strategic-mode.md             ← Strategic Mode prompt layer
+│   ├── direct-mode.md                ← Direct Mode prompt layer
+│   └── provocative-mode.md           ← Provocative Mode prompt layer
+├── examples/
+│   └── worked-examples.md            ← All four modes in action across enterprise contexts
+├── knowledge/
+│   ├── ux-principles.md              ← Core knowledge base
+│   ├── ux-writing.md                 ← Interface copy: button labels, errors, empty states, voice and tone
+│   ├── heuristics.md                 ← Nielsen's heuristics with applied commentary
+│   ├── ai-ux-considerations.md       ← AI interface reasoning guide
+│   ├── rad-design-system.md          ← Full RAD component catalog (34 components)
+│   ├── psychology-deep-dive.md       ← Cognitive science, decision architecture, animation timing
+│   ├── patterns-and-flows.md         ← Cross-industry patterns: onboarding, auth, e-commerce, nav
+│   ├── design-tokens.md              ← Complete CSS token scales: spacing, color, type, shadows
+│   ├── component-library.md          ← Full component specs: buttons, inputs, cards, modals, toasts
+│   ├── polish-and-craft.md           ← Advanced visual techniques with copy-paste CSS
+│   └── ui-engineering.md             ← React/TS, shadcn/ui, CVA, Radix, component architecture
+├── integrations/
+│   ├── claude-skill.md               ← Claude Project and API setup
+│   ├── custom-gpt.md                 ← OpenAI custom GPT deployment (degraded — see note)
+│   └── rad-integration.md            ← Using this agent with the RAD design system
+└── docs/
+    ├── contribution-guide.md         ← How to extend the skill
+    ├── vocabulary-constraints.md     ← Words that are banned and why
+    └── changelog.md                  ← Version history
+```
 
 ---
 
