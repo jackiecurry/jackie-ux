@@ -138,6 +138,12 @@ Execution mode. Give it a component, a flow, or a screen to design and it will p
 
 ## Setup
 
+**First: get the files**
+
+Click the green **Code** button at the top of this page → **Download ZIP**. Unzip the folder somewhere you can find it. That's all you need before following any of the steps below.
+
+---
+
 Three ways to use Jackie. Pick the one that fits how you work.
 
 | | Quickest Start | Claude Projects | API |
