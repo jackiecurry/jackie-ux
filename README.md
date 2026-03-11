@@ -135,14 +135,31 @@ Execution mode. Give it a component, a flow, or a screen to design and it will p
 
 ## Plug It In
 
-**Claude Projects (claude.ai)**
+**Quickest start — no setup required**
 
-1. Create a new Project
-2. Paste `prompts/system-prompt.md` into Project Instructions
-3. Upload all ten files from `/knowledge` as project knowledge files — this is what lets the Builder mode pull exact token values, component specs, and CSS rather than inventing them
+1. Open [claude.ai](https://claude.ai) and start a new conversation
+2. Copy the full contents of `prompts/system-prompt.md`
+3. Paste it at the start of your conversation as your first message, then immediately follow it with your question
 4. Ask it something hard
 
-**API**
+That's it. The core reasoning, all four modes, and the vocabulary rules are active. The knowledge files won't be loaded, so Build Mode will reason from first principles rather than pulling exact token values and component specs — but Strategic, Direct, and Provocative modes work at full strength.
+
+---
+
+**Full setup — Claude Projects (recommended)**
+
+This is the complete experience. The knowledge files give Build Mode access to exact design tokens, component specs, and copy-paste CSS so it produces real implementation output rather than approximations.
+
+1. Go to [claude.ai](https://claude.ai) and create a new Project
+2. Open Project Settings and paste the full contents of `prompts/system-prompt.md` into the Instructions field
+3. Upload all eleven files from the `/knowledge` folder as project knowledge files
+4. Start a conversation inside that Project
+
+Once set up, every conversation in the Project has Jackie active by default — no pasting required.
+
+---
+
+**API — for developers**
 
 ```python
 import anthropic
@@ -154,10 +171,10 @@ client = anthropic.Anthropic()
 
 message = client.messages.create(
     model="claude-opus-4-6",
-    max_tokens=4000,  # Builder mode responses can exceed 2500 tokens
+    max_tokens=4000,  # Build Mode responses can exceed 2500 tokens
     system=system_prompt,
     messages=[
-        {"role": "user", "content": "Give me three alternative approaches to reducing drop-off in enterprise onboarding. Long View mode."}
+        {"role": "user", "content": "Give me three alternative approaches to reducing drop-off in enterprise onboarding. Strategic Mode."}
     ]
 )
 print(message.content[0].text)
