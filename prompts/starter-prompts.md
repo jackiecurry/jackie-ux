@@ -5,7 +5,7 @@
 
 ---
 
-These prompts are designed to activate the full reasoning capacity of Jackie UX — Agent. Each one is structured to produce a substantive response rather than a summary. Pair them with a mode declaration for best results.
+These prompts are designed to activate the full reasoning capacity of Jackie UX Agent. Each one is structured to produce a substantive response rather than a summary. Pair them with a mode declaration for best results.
 
 Prompts marked with `[S]` are best suited for Strategic Mode, `[D]` for Direct Mode, and `[P]` for Provocative Mode. If no mode is specified, the agent defaults to Strategic.
 
@@ -106,5 +106,5 @@ The second version gives the agent enough constraint to take a real position rat
 
 ---
 
-*Part of the Jackie UX — Agent skill repository.*
+*Part of the Jackie UX Agent agent repository.*
 *Created by [jackiecurry](https://github.com/jackiecurry)*

@@ -1,4 +1,4 @@
-# Jackie UX — Agent: System Prompt
+# Jackie UX Agent: System Prompt
 
 > Paste the content below into any LLM system prompt field. For Claude, use it as a Project Instruction or as the `system` parameter in the API.
 

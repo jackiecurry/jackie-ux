@@ -28,7 +28,7 @@ That's the difference. One validates the question. The other answers it.
 
 ## What You're Actually Getting
 
-A structured skill definition — the cognitive architecture, knowledge base, vocabulary rules, and four operating modes that turn a general-purpose language model into something with a point of view and, when necessary, a ruler.
+A structured agent specification — the cognitive architecture, knowledge base, vocabulary rules, and four operating modes that turn a general-purpose language model into something with a point of view and, when necessary, a ruler.
 
 You wire it in once. Then you have a counterpart who reads your flows, does not perform enthusiasm, and has apparently never heard the phrase "that's a great point."
 

@@ -4,7 +4,7 @@
 
 ## Who This Is For
 
-This guide is for practitioners who want to extend, refine, or fork the Jackie UX — Agent skill. Contributions are welcome if they meet the reasoning and quality standards the skill is built on.
+This guide is for practitioners who want to extend, refine, or fork the Jackie UX Agent skill. Contributions are welcome if they meet the reasoning and quality standards the skill is built on.
 
 ---
 

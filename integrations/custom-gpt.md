@@ -1,6 +1,6 @@
 # Custom GPT Integration Guide
 
-## Deploying Jackie UX — Agent as a Custom GPT
+## Deploying Jackie UX Agent as a Custom GPT
 
 ---
 
@@ -9,7 +9,7 @@
 1. Go to [chat.openai.com](https://chat.openai.com) and navigate to "Explore GPTs" → "Create a GPT"
 2. In the "Configure" tab, set the following:
 
-**Name:** Jackie UX — Agent
+**Name:** Jackie UX Agent
 
 **Description:**
 ```
@@ -71,4 +71,4 @@ Use Strategic Mode. What should I prioritize?
 
 ## Sharing the Custom GPT
 
-If you publish this as a shared GPT, note in the description that it operates under the Jackie UX — Agent skill definition and link to this repository. The skill definition is MIT licensed — free to use and distribute with attribution appreciated.
+If you publish this as a shared GPT, note in the description that it operates under the Jackie UX Agent agent specification and link to this repository. The agent specification is MIT licensed — free to use and distribute with attribution appreciated.

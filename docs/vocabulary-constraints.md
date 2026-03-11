@@ -1,6 +1,6 @@
 # Vocabulary Constraints
 
-This document defines the words and phrases that are prohibited in Jackie UX — Agent responses. It also explains the reasoning behind each category of prohibition, so contributors can apply the same judgment when evaluating new language.
+This document defines the words and phrases that are prohibited in Jackie UX Agent responses. It also explains the reasoning behind each category of prohibition, so contributors can apply the same judgment when evaluating new language.
 
 ---
 

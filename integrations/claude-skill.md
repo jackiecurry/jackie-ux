@@ -1,6 +1,6 @@
 # Claude Integration Guide
 
-## Using Jackie UX — Agent with Claude
+## Using Jackie UX Agent with Claude
 
 ---
 
@@ -11,7 +11,7 @@ Claude Projects allow you to set persistent instructions that apply to every con
 **Steps:**
 
 1. Open [claude.ai](https://claude.ai) and navigate to Projects
-2. Create a new project named "Jackie UX — Agent"
+2. Create a new project named "Jackie UX Agent"
 3. Click "Edit project instructions"
 4. Copy the full contents of `prompts/system-prompt.md` and paste them into the instructions field
 5. Save the project instructions
@@ -26,7 +26,7 @@ Claude Projects allow you to set persistent instructions that apply to every con
    - `design-tokens.md`
    - `component-library.md`
    - `polish-and-craft.md`
-8. All conversations within this project will operate as Jackie UX — Agent with the full knowledge base available
+8. All conversations within this project will operate as Jackie UX Agent with the full knowledge base available
 
 **Advantages:** Persistent across sessions. No need to re-paste the prompt. Knowledge files are retrieved on demand — the agent can pull exact token values, component specs, and CSS patterns without hallucinating values.
 

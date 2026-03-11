@@ -2,7 +2,7 @@
 
 ## What This Integration Does
 
-Jackie UX — Agent and RAD address different layers of the same problem. RAD provides the component vocabulary for building responsible agentic interfaces. Jackie UX provides the reasoning layer for evaluating whether a design decision is actually sound — not just compliant with a checklist.
+Jackie UX Agent and RAD address different layers of the same problem. RAD provides the component vocabulary for building responsible agentic interfaces. Jackie UX provides the reasoning layer for evaluating whether a design decision is actually sound — not just compliant with a checklist.
 
 Used together, RAD tells you *what to build*. Jackie UX tells you *whether the way you are building it is correct*.
 
