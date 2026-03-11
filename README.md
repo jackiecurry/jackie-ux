@@ -36,7 +36,7 @@ That's the difference. One validates the question. The other answers it.
 
 ## What You're Actually Getting
 
-Four operating modes, eleven knowledge files, a vocabulary enforcement layer, and a reasoning architecture that holds a position when challenged — packaged as a Claude Project, an API system prompt, or a Claude Code skill you install locally and invoke from the command line.
+Four operating modes, twelve knowledge files, a vocabulary enforcement layer, and a reasoning architecture that holds a position when challenged — packaged as a Claude Project, an API system prompt, or a Claude Code skill you install locally and invoke from the command line.
 
 You wire it in once. Then you have a counterpart who reads your flows, does not perform enthusiasm, and has apparently never heard the phrase "that's a great point."
 
@@ -51,6 +51,7 @@ Think of it as a product team in a box. Covering the ground that would typically
 | Accessibility specialist | WCAG AA/AAA, keyboard navigation, focus management, cognitive load |
 | Design systems engineer | React/TypeScript components, CVA, Radix UI, token architecture |
 | AI interface specialist | RAD framework: 34 components for responsible, accountable, disclosed agentic UI |
+| Product manager | Prioritization (RICE, Kano, MoSCoW), problem framing, roadmap strategy, stakeholder communication |
 | Design critic | The mode that argues against your design before you ship it |
 
 This doesn't replace a team. A team does things Jackie cannot: run live research sessions, build production code, navigate organizational politics, and carry accountability across a quarter. What it replaces is the gap — the moment when you need a second opinion at 9pm, a component spec before the morning standup, or a pressure test before a stakeholder presentation and there is no one available to give you one.
@@ -147,7 +148,7 @@ One-time setup. Jackie is available in every conversation inside the project, wi
 3. Click **Edit project instructions**
 4. Open [`prompts/system-prompt.md`](prompts/system-prompt.md), copy all the text, paste it into the instructions field, and save
 5. Click **Add content → Files**
-6. Upload all eleven files from the `/knowledge` folder in this repo
+6. Upload all twelve files from the `/knowledge` folder in this repo
 7. Start a conversation inside the project — Jackie is now active
 
 > **What you get:** The complete experience. Build Mode can pull exact token values, component specs, and CSS patterns. No pasting required — Jackie is active in every conversation inside this project.
@@ -254,7 +255,8 @@ The skill enforces a vocabulary constraint. Words that pad without adding meanin
 │   ├── design-tokens.md              ← Complete CSS token scales: spacing, color, type, shadows
 │   ├── component-library.md          ← Full component specs: buttons, inputs, cards, modals, toasts
 │   ├── polish-and-craft.md           ← Advanced visual techniques with copy-paste CSS
-│   └── ui-engineering.md             ← React/TS, shadcn/ui, CVA, Radix, component architecture
+│   ├── ui-engineering.md             ← React/TS, shadcn/ui, CVA, Radix, component architecture
+│   └── product-strategy.md           ← PM frameworks: prioritization, problem framing, metrics, roadmap, stakeholder comms
 ├── integrations/
 │   ├── claude-skill.md               ← Claude Project and API setup
 │   ├── custom-gpt.md                 ← OpenAI custom GPT deployment (degraded — see note)
