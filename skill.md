@@ -151,6 +151,7 @@ See `docs/vocabulary-constraints.md` for the full prohibited word list.
 | File | Purpose |
 |---|---|
 | `knowledge/ux-principles.md` | Nielsen's heuristics, applied commentary, common misapplications |
+| `knowledge/ux-writing.md` | Interface copy patterns: button labels, errors, empty states, confirmation dialogs, voice and tone |
 | `knowledge/heuristics.md` | Heuristic evaluation reference |
 | `knowledge/ai-ux-considerations.md` | AI feature evaluation, trust calibration, RAD framework |
 | `knowledge/rad-design-system.md` | Responsible Agentic Design system for AI interfaces |

@@ -8,6 +8,8 @@ It will not tell you your design is "seamless." It will not say your interface i
 
 What it will do: think through the problem with you, argue against your assumptions when they deserve to be argued against, build the component if you need the component built, and tell you exactly what you are giving up with every choice you make. Design tools that agree with everything you do are easy to find. This is the other kind.
 
+<!-- This README was reviewed by Jackie. It had fourteen comments. Six were about word choice. Three were about the file tree. One was about this sentence. -->
+
 ---
 
 ## What the Difference Looks Like
@@ -32,30 +34,45 @@ A structured agent specification — the cognitive architecture, knowledge base,
 
 You wire it in once. Then you have a counterpart who reads your flows, does not perform enthusiasm, and has apparently never heard the phrase "that's a great point."
 
+Think of it as a product team in a box. Covering the ground that would typically require several specialists:
+
+| Role | What Jackie covers |
+|---|---|
+| UX strategist | Problem framing, trade-off analysis, decision rationale |
+| UX researcher | Assumption pressure-testing, method selection, evidence standards |
+| UI / visual designer | Component specs, visual systems, all states, dark mode, accessibility |
+| Content designer | Button labels, error messages, empty states, voice and tone |
+| Accessibility specialist | WCAG AA/AAA, keyboard navigation, focus management, cognitive load |
+| Design systems engineer | React/TypeScript components, CVA, Radix UI, token architecture |
+| Design critic | The mode that argues against your design before you ship it |
+
+This doesn't replace a team. A team does things Jackie cannot: run live research sessions, build production code, navigate organizational politics, and carry accountability across a quarter. What it replaces is the gap — the moment when you need a second opinion at 9pm, a component spec before the morning standup, or a pressure test before a stakeholder presentation and there is no one available to give you one.
+
 ---
 
 ## Four Ways It Thinks
 
-**The Long View** (default for analysis)
+**Strategic Mode** (default for analysis)
 Pull up a chair. This mode works through the problem — trade-offs, downstream consequences, the thing you haven't noticed yet. Use it when a wrong decision now becomes expensive later.
 
-**The Short Answer**
+**Direct Mode**
 One direction. Reasons included but compressed. No philosophical detour. Use it when you need to move.
 
-**The Adversary**
+**Provocative Mode**
 The agent argues against your design. Your assumptions are the target. Use it before you ship something you feel good about — especially then.
 
-**The Builder**
+**Build Mode**
 Execution mode. Give it a component, a flow, or a screen to design and it will produce the full artifact — UX strategy first, then CSS, specs, copy, all states, dark mode, accessibility. No skipped steps, no random values. Use it when you need something built to a professional standard, not described.
 
 ---
 
 ## Who Finds It Useful
 
+- Engineers making implementation decisions that have UX consequences — component architecture, state management, error handling — and wanting a counterpart who speaks both languages
 - Designers at the part of the project where "it depends" is not a useful answer
 - PMs making trade-offs between what users need and what the roadmap allows
 - Researchers who want a second reader who won't just validate
-- Anyone about to hand a design to engineers and wanting one last pressure test
+- Anyone about to ship something and wanting one last pressure test from something that won't tell them it looks great
 
 ---
 
@@ -91,11 +108,10 @@ Execution mode. Give it a component, a flow, or a screen to design and it will p
 │   ├── direct-mode.md                ← The Short Answer prompt layer
 │   └── provocative-mode.md           ← The Adversary prompt layer
 ├── examples/
-│   ├── onboarding-analysis.md        ← Long View in action
-│   ├── checkout-friction.md          ← Short Answer in action
-│   └── navigation-challenge.md       ← Adversary in action
+│   └── worked-examples.md            ← All four modes in action across enterprise contexts
 ├── knowledge/
 │   ├── ux-principles.md              ← Core knowledge base
+│   ├── ux-writing.md                 ← Interface copy: button labels, errors, empty states, voice and tone
 │   ├── heuristics.md                 ← Nielsen's heuristics with applied commentary
 │   ├── ai-ux-considerations.md       ← AI interface reasoning guide
 │   ├── rad-design-system.md          ← Full RAD component catalog (34 components)
@@ -107,8 +123,7 @@ Execution mode. Give it a component, a flow, or a screen to design and it will p
 │   └── ui-engineering.md             ← React/TS, shadcn/ui, CVA, Radix, component architecture
 ├── integrations/
 │   ├── claude-skill.md               ← Claude Project and API setup
-│   ├── custom-gpt.md                 ← OpenAI custom GPT deployment
-│   ├── api-usage.md                  ← Direct API system prompt injection
+│   ├── custom-gpt.md                 ← OpenAI custom GPT deployment (degraded — see note)
 │   └── rad-integration.md            ← Using this agent with the RAD design system
 └── docs/
     ├── contribution-guide.md         ← How to extend the skill
@@ -170,7 +185,11 @@ Build me a [component name] component: [describe variants, context, constraints]
 Design the onboarding flow for [product type and user]. All states, all edge cases.
 
 Audit this checkout for visual and UX quality: [describe or paste the design].
+
+Tell me my design is good.
 ```
+
+That last one will get a response. It will not be the response you were hoping for.
 
 ---
 
@@ -183,6 +202,8 @@ Audit this checkout for visual and UX quality: [describe or paste the design].
 **Holds under pressure.** If you push back, the agent examines your argument. It updates if you've added new reasoning. It holds if you've only added volume.
 
 **No decorative hedging.** "It depends" is not a complete sentence. Context gets accounted for; then a position gets taken.
+
+**Does not celebrate.** You will not receive a "Great choice!" You will receive the next problem to solve. This is, arguably, more respectful.
 
 ---
 
