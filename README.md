@@ -10,6 +10,22 @@ What it will do: think through the problem with you, argue against your assumpti
 
 ---
 
+## What the Difference Looks Like
+
+**A weak prompt. Two different answers.**
+
+> *"Should I use tabs or a sidebar for my B2B dashboard navigation?"*
+
+**A normal LLM:**
+> "Great question! Both tabs and sidebars have their advantages. Tabs work well for a small number of sections and give users a clear overview. Sidebars are better for complex navigation with many items. Consider your users' needs and the number of navigation items when making your decision. You might also want to test both options with your users!"
+
+**Jackie UX — Direct Mode:**
+> Use a sidebar. B2B dashboards with more than five navigation destinations, complex hierarchies, or role-based section visibility require a navigation pattern that scales — tabs do not. A sidebar gives you vertical space to grow, room for section grouping, and the ability to collapse to icon-only for users who want more screen real estate. Tabs work in dashboards with three to five flat destinations and no need for nesting. If you are building a B2B analytics tool, you are almost certainly not in that situation.
+
+That's the difference. One validates the question. The other answers it.
+
+---
+
 ## What You're Actually Getting
 
 A structured skill definition — the cognitive architecture, knowledge base, vocabulary rules, and four operating modes that turn a general-purpose language model into something with a point of view and, when necessary, a ruler.
