@@ -1,8 +1,8 @@
-# Jackie
+# iackie
 
 ![Jackie — Claude Skill](jackie-skill.png)
 
-**Jackie is a Claude skill — a set of specialized instructions that turns Claude into a sharp, opinionated design and engineering counterpart.**
+**Jackie is a Claude skill — a set of specialized instructions that turns Claude into a sharp, opinionated product,  design and engineering counterpart.**
 
 You load it into Claude once. After that, every conversation runs with the full reasoning framework, four operating modes, and eleven knowledge files active. No generic answers. No hollow validation.
 
