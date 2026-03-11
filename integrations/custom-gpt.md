@@ -1,8 +1,8 @@
 # Custom GPT Integration Guide
 
-> **Note:** Jackie UX Agent is designed for Claude. This guide covers Custom GPT deployment, but the experience is degraded — Custom GPTs cannot load the nine knowledge files the same way Claude Projects can, which means Build Mode will produce weaker output. Strategic, Direct, and Provocative modes work reasonably well.
+> **Note:** Jackie Agent is designed for Claude. This guide covers Custom GPT deployment, but the experience is degraded — Custom GPTs cannot load the nine knowledge files the same way Claude Projects can, which means Build Mode will produce weaker output. Strategic, Direct, and Provocative modes work reasonably well.
 
-## Deploying Jackie UX Agent as a Custom GPT
+## Deploying Jackie Agent as a Custom GPT
 
 ---
 
@@ -11,7 +11,7 @@
 1. Go to [chat.openai.com](https://chat.openai.com) and navigate to "Explore GPTs" → "Create a GPT"
 2. In the "Configure" tab, set the following:
 
-**Name:** Jackie UX Agent
+**Name:** Jackie Agent
 
 **Description:**
 ```
@@ -73,4 +73,4 @@ Use Strategic Mode. What should I prioritize?
 
 ## Sharing the Custom GPT
 
-If you publish this as a shared GPT, note in the description that it operates under the Jackie UX Agent agent specification and link to this repository. The agent specification is MIT licensed — free to use and distribute with attribution appreciated.
+If you publish this as a shared GPT, note in the description that it operates under the Jackie Agent agent specification and link to this repository. The agent specification is MIT licensed — free to use and distribute with attribution appreciated.

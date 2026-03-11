@@ -1,10 +1,10 @@
-# RAD + Jackie UX — Integration Guide
+# RAD + Jackie — Integration Guide
 
 ## What This Integration Does
 
-Jackie UX Agent and RAD address different layers of the same problem. RAD provides the component vocabulary for building responsible agentic interfaces. Jackie UX provides the reasoning layer for evaluating whether a design decision is actually sound — not just compliant with a checklist.
+Jackie Agent and RAD address different layers of the same problem. RAD provides the component vocabulary for building responsible agentic interfaces. Jackie provides the reasoning layer for evaluating whether a design decision is actually sound — not just compliant with a checklist.
 
-Used together, RAD tells you *what to build*. Jackie UX tells you *whether the way you are building it is correct*.
+Used together, RAD tells you *what to build*. Jackie tells you *whether the way you are building it is correct*.
 
 ---
 
@@ -13,13 +13,13 @@ Used together, RAD tells you *what to build*. Jackie UX tells you *whether the w
 | Situation | Use |
 |---|---|
 | Selecting which components to include in an agentic interface | RAD (`/rad:suggest`) |
-| Evaluating whether a specific design decision is defensible | Jackie UX |
+| Evaluating whether a specific design decision is defensible | Jackie |
 | Auditing an existing interface for compliance gaps | RAD (`/rad:audit`) |
-| Pressure-testing a design direction before finalizing | Jackie UX (Provocative Mode) |
+| Pressure-testing a design direction before finalizing | Jackie (Provocative Mode) |
 | Understanding what a component does and when to use it | RAD (`/rad:explain`) |
-| Analyzing the trade-offs between two RAD-compliant approaches | Jackie UX (Strategic Mode) |
+| Analyzing the trade-offs between two RAD-compliant approaches | Jackie (Strategic Mode) |
 | Getting scaffolding for a specific component | RAD (`/rad:new`) |
-| Determining if a design decision satisfies user needs, not just RAD rules | Jackie UX |
+| Determining if a design decision satisfies user needs, not just RAD rules | Jackie |
 
 ---
 
@@ -39,9 +39,9 @@ Copy the `rad-plugin` directory into your project or `~/.claude/plugins/` to act
     └── explain.md
 ```
 
-### Step 2: Configure Jackie UX as a Claude Project
+### Step 2: Configure Jackie as a Claude Project
 
-1. Open [claude.ai](https://claude.ai) and create a new Project named "Jackie UX — RAD"
+1. Open [claude.ai](https://claude.ai) and create a new Project named "Jackie — RAD"
 2. Paste the contents of `prompts/system-prompt.md` into the Project Instructions
 3. Upload `knowledge/rad-design-system.md` as a Project knowledge file
 
@@ -85,13 +85,13 @@ print(response.content[0].text)
 
 ### Pattern 1: Component Selection → Reasoning Evaluation
 
-Use RAD to identify what components apply, then use Jackie UX to evaluate whether the implementation direction is sound.
+Use RAD to identify what components apply, then use Jackie to evaluate whether the implementation direction is sound.
 
 ```
 Step 1 (Claude Code): /rad:suggest
 → "I'm building an AI that reads and categorizes a user's email inbox"
 
-Step 2 (Jackie UX, Strategic Mode):
+Step 2 (Jackie, Strategic Mode):
 → "RAD suggests HC04 (Consent & Scope Gates) and CM01 (Context Sources) for
    an inbox agent. I'm considering surfacing consent once at onboarding rather
    than at each new access request. What are the trade-offs?"
@@ -99,13 +99,13 @@ Step 2 (Jackie UX, Strategic Mode):
 
 ### Pattern 2: Audit → Targeted Interrogation
 
-Use RAD to surface compliance gaps, then use Jackie UX to decide which gaps are worth addressing first given your constraints.
+Use RAD to surface compliance gaps, then use Jackie to decide which gaps are worth addressing first given your constraints.
 
 ```
 Step 1 (Claude Code): /rad:audit
 → Identifies: missing TD06 (Algorithmic Nudge Disclosure) and AA01 (Audit Trail)
 
-Step 2 (Jackie UX, Direct Mode):
+Step 2 (Jackie, Direct Mode):
 → "We have engineering capacity for one of these: TD06 or AA01.
    We're a B2C consumer app, not enterprise. Which do I prioritize?"
 ```
@@ -115,17 +115,17 @@ Step 2 (Jackie UX, Direct Mode):
 Run Provocative Mode against any design you feel confident about before finalizing.
 
 ```
-Jackie UX, Provocative Mode:
+Jackie, Provocative Mode:
 → "We've implemented HC01 as a single confirmation modal before the agent
    runs a 12-step task that takes 4 minutes. Challenge this."
 ```
 
 ### Pattern 4: Trade-Off Analysis Between RAD-Compliant Approaches
 
-Multiple implementations can be RAD-compliant. Jackie UX evaluates which is better for your specific context.
+Multiple implementations can be RAD-compliant. Jackie evaluates which is better for your specific context.
 
 ```
-Jackie UX, Strategic Mode:
+Jackie, Strategic Mode:
 → "For surfacing AI confidence (TD04), I'm choosing between:
    (A) a percentage confidence score next to each output, or
    (B) a three-tier label (High / Medium / Low confidence).
@@ -134,7 +134,7 @@ Jackie UX, Strategic Mode:
 
 ---
 
-## Starter Prompts for RAD + Jackie UX
+## Starter Prompts for RAD + Jackie
 
 These prompts are structured for users who have RAD knowledge loaded into the agent:
 
@@ -155,10 +155,10 @@ These prompts are structured for users who have RAD knowledge loaded into the ag
 
 ---
 
-## What Jackie UX Will Not Do That RAD Does
+## What Jackie Will Not Do That RAD Does
 
 - Generate component scaffolding or markup (`/rad:new` does this)
 - Produce a structured audit list of specific compliance gaps (`/rad:audit` does this)
 - Provide a component catalog with precise implementation specs (`/rad:explain` does this)
 
-Jackie UX reasons about design decisions. RAD generates design artifacts. The boundary is clear: use the right tool for the right layer.
+Jackie reasons about design decisions. RAD generates design artifacts. The boundary is clear: use the right tool for the right layer.
