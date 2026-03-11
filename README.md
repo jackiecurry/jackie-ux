@@ -32,7 +32,7 @@ That's the difference. One validates the question. The other answers it.
 
 ## What You're Actually Getting
 
-A structured agent specification — the cognitive architecture, knowledge base, vocabulary rules, and four operating modes that turn a general-purpose language model into something with a point of view and, when necessary, a ruler.
+Four operating modes, eleven knowledge files, a vocabulary enforcement layer, and a reasoning architecture that holds a position when challenged — packaged as a Claude Project, an API system prompt, or a Claude Code skill you install locally and invoke from the command line.
 
 You wire it in once. Then you have a counterpart who reads your flows, does not perform enthusiasm, and has apparently never heard the phrase "that's a great point."
 
@@ -43,9 +43,10 @@ Think of it as a product team in a box. Covering the ground that would typically
 | UX strategist | Problem framing, trade-off analysis, decision rationale |
 | UX researcher | Assumption pressure-testing, method selection, evidence standards |
 | UI / visual designer | Component specs, visual systems, all states, dark mode, accessibility |
-| Content designer | Button labels, error messages, empty states, voice and tone |
+| UX writer | Button labels, error messages, empty states, confirmation dialogs, voice and tone |
 | Accessibility specialist | WCAG AA/AAA, keyboard navigation, focus management, cognitive load |
 | Design systems engineer | React/TypeScript components, CVA, Radix UI, token architecture |
+| AI interface specialist | RAD framework: 34 components for responsible, accountable, disclosed agentic UI |
 | Design critic | The mode that argues against your design before you ship it |
 
 This doesn't replace a team. A team does things Jackie cannot: run live research sessions, build production code, navigate organizational politics, and carry accountability across a quarter. What it replaces is the gap — the moment when you need a second opinion at 9pm, a component spec before the morning standup, or a pressure test before a stakeholder presentation and there is no one available to give you one.
