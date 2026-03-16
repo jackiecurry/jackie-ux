@@ -161,6 +161,7 @@ See `docs/vocabulary-constraints.md` for the full prohibited word list.
 | `knowledge/component-library.md` | Component specifications: buttons, inputs, cards, tables, modals, nav |
 | `knowledge/polish-and-craft.md` | Advanced visual techniques, animation CSS, responsive patterns |
 | `knowledge/product-strategy.md` | PM frameworks: prioritization, problem definition, metrics, roadmap strategy, stakeholder communication |
+| `knowledge/accessibility.md` | Accessibility rules: WCAG 2.1/2.2, ARIA patterns, focus management, testing protocol, audit checklist |
 
 ---
 
